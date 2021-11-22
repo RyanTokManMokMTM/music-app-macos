@@ -14,6 +14,11 @@
 		7A8DCFB92740F7640049A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8DCFB82740F7640049A7FB /* Assets.xcassets */; };
 		7A8DCFBC2740F7640049A7FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8DCFBB2740F7640049A7FB /* Preview Assets.xcassets */; };
 		7A8DCFC72740FD100049A7FB /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DCFC62740FD100049A7FB /* BlurView.swift */; };
+		7AFA5D7C27426F2D000C9EC4 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFA5D7B27426F2D000C9EC4 /* HomePage.swift */; };
+		7AFA5D80274272EF000C9EC4 /* TopNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFA5D7F274272EF000C9EC4 /* TopNavBar.swift */; };
+		7AFA5D84274273A6000C9EC4 /* LeftNavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFA5D83274273A6000C9EC4 /* LeftNavButton.swift */; };
+		7AFA5D8727427653000C9EC4 /* LeftNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFA5D8627427653000C9EC4 /* LeftNavBar.swift */; };
+		7AFA5D8B27427805000C9EC4 /* RecommandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFA5D8A27427805000C9EC4 /* RecommandView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		7A8DCFBD2740F7640049A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A8DCFBE2740F7640049A7FB /* MusicApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MusicApp.entitlements; sourceTree = "<group>"; };
 		7A8DCFC62740FD100049A7FB /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		7AFA5D7B27426F2D000C9EC4 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		7AFA5D7F274272EF000C9EC4 /* TopNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavBar.swift; sourceTree = "<group>"; };
+		7AFA5D83274273A6000C9EC4 /* LeftNavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftNavButton.swift; sourceTree = "<group>"; };
+		7AFA5D8627427653000C9EC4 /* LeftNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftNavBar.swift; sourceTree = "<group>"; };
+		7AFA5D8A27427805000C9EC4 /* RecommandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommandView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +77,11 @@
 		7A8DCFB32740F7540049A7FB /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				7AFA5D89274277F5000C9EC4 /* MainView */,
 				7A8DCFB42740F7540049A7FB /* MusicAppApp.swift */,
+				7AFA5D7E274272E1000C9EC4 /* View */,
 				7A8DCFB62740F7540049A7FB /* ContentView.swift */,
+				7AFA5D7B27426F2D000C9EC4 /* HomePage.swift */,
 				7A5D89D02741F77700EC072A /* ViewModel */,
 				7A8DCFC52740FCF10049A7FB /* CustomComponent */,
 				7A8DCFB82740F7640049A7FB /* Assets.xcassets */,
@@ -92,8 +105,26 @@
 			children = (
 				7A5D89CD2741F6CB00EC072A /* TopNavButton.swift */,
 				7A8DCFC62740FD100049A7FB /* BlurView.swift */,
+				7AFA5D83274273A6000C9EC4 /* LeftNavButton.swift */,
 			);
 			path = CustomComponent;
+			sourceTree = "<group>";
+		};
+		7AFA5D7E274272E1000C9EC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AFA5D7F274272EF000C9EC4 /* TopNavBar.swift */,
+				7AFA5D8627427653000C9EC4 /* LeftNavBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AFA5D89274277F5000C9EC4 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				7AFA5D8A27427805000C9EC4 /* RecommandView.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +197,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A8DCFB72740F7540049A7FB /* ContentView.swift in Sources */,
+				7AFA5D7C27426F2D000C9EC4 /* HomePage.swift in Sources */,
+				7AFA5D8727427653000C9EC4 /* LeftNavBar.swift in Sources */,
+				7AFA5D84274273A6000C9EC4 /* LeftNavButton.swift in Sources */,
 				7A5D89D32741F7AA00EC072A /* NavVM.swift in Sources */,
 				7A5D89CE2741F6CB00EC072A /* TopNavButton.swift in Sources */,
 				7A8DCFB52740F7540049A7FB /* MusicAppApp.swift in Sources */,
+				7AFA5D8B27427805000C9EC4 /* RecommandView.swift in Sources */,
+				7AFA5D80274272EF000C9EC4 /* TopNavBar.swift in Sources */,
 				7A8DCFC72740FD100049A7FB /* BlurView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
